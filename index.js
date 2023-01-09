@@ -26,7 +26,7 @@ const upload = multer({ storage });
 
 
 app.get("/upload", (req, res) => {
-  res.sendFile("/home/giguchi/Documents/dev_walk_arounds/uploads/upload_on_server/index.html")
+  res.sendFile(path.join(__dirname, "index.html"))
 })
 
 
